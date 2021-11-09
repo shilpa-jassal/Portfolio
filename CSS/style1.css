@@ -1,0 +1,226 @@
+nav{
+    height: 80px;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+nav .logo{
+    font-size: 33px;
+    color: #fff;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+     
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    background: #fff;
+    color: #1b1b1b;
+}
+#click:checked ~ul{
+    left: 0%;
+}
+#click{
+    display: none;
+}
+ 
+@media (max-width: 940px){
+    nav .menu-btn i{
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    #click1:checked {
+        left: 0%;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -110%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display:block;
+        text-align: center;
+        transition: all 0.3s ease;
+
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 40px 0;
+        display: block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+         color: cyan;
+         background: none;
+    } 
+    
+   
+}
+ 
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin:40px 0px;
+}
+
+
+/*About Section*/
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding:20px;
+    margin-bottom:50px;
+    text-align: center;
+
+}
+
+#pic{
+     
+    display:flex;
+    margin-left: 180px;
+    padding-left:1px;
+    padding-top: 50px;
+    height: 600px;
+    width: 1100px;
+    background-color:  rgb(247, 245, 245);
+
+     
+}
+
+
+#self{
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+    border:2px solid black;
+}
+
+#intro{
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 30px;
+    line-height: 22px;
+    
+}
+ 
+/*Education*/
+#education{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+     
+
+}
+.edu{
+      
+    display:flex;
+    margin-left: 180px;
+    padding-left:1px;
+    padding-top: 50px;
+    height: 650px;
+    width: 1100px;
+    background-color:  rgb(247, 245, 245);
+
+}
+
+/*Publications*/
+#publications{
+    display:flex;
+    flex-direction: column;
+}
+.pub{
+    display:flex;
+    margin-left: 250px;
+    padding-left:10px;
+    padding-top: 20px;
+    height: 600px;
+    width: 1000px;
+    background-color:  rgb(247, 245, 245);
+    line-height: 30px;
+}
+
+/*Teachings*/
+#teaching{
+    display:flex;
+    flex-direction: column;
+}
+ 
+#teach{
+    display:flex;
+    margin-left: 250px;
+    padding-left:40px;
+    padding-top: 50px;
+    height: 500px;
+    width: 1000px;
+    background-color:  rgb(247, 245, 245);
+
+}
+
+
+#contact{
+    display:flex;
+    flex-direction: column;
+}
+.w3-container{
+    padding: 1em 600px;
+    line-height: 40px;
+    width:3000px;
+    font-size: 20px;
+     
+    
+}
+#cont{
+    display:flex;
+    margin-left: 10px;
+    padding-left:40px;
+    height: 500px;
+    width: 2500px;
+    background-color:  rgb(247, 245, 245);
+}
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: gray;
+    bottom: 40px;
+    right:50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+}
+ 
+.pos{
+    float:left;
+    padding-left:100px;
+    margin-top: -80px;
+}
